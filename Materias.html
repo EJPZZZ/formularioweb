@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>SEP</title>
+    <h2>Secretaria de Educacion Publica</h2>
+    <h4>Modulo de materias de los alumnos</h4>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Menu Principal</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html"
+            >Maestros <span class="sr-only"></span></a
+          >
+          <a class="nav-item nav-link" href="Alumnos.html">Alumnos</a>
+          <a class="nav-item nav-link" href="Materias.html">Materias</a>
+          <a class="nav-item nav-link disabled" href="#">Horarios</a>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+          <h4>Inventario de productos</h4>
+          <h5>Agregar productos</h5>
+<form action="AltaProductos.php" method="post" id="FRMproductos">
+          <div class="mb-3">
+            <label for="inputIdProductos" class="form-label">
+              Id del producto:
+            </label>
+            <input
+              type="text"
+              placeholder="Introduce el ID del producto"
+              class="form-control"
+              id="inputIdProductos" name="inputIdProductos"
+              aria-label="form-control-sm"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputDescripcion">Descripción</label>
+            <input
+              type="text"
+              placeholder="Descripción del producto"
+              class="form-control"
+              id="inputDescripcion" name="inputDescripcion"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="SelectMarca"> Marca: </label>
+            <select class="form-select form-control-sm" id="selectMarca" name="selectMarca">
+              <option value="Hewlett Packard">Hewlett Packard</option>
+              <option value="Dell">Dell</option>
+              <option value="Asus">Asus</option>
+              <option value="Lenovo">Lenovo</option>
+              <option value="Huawei">Huawei</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="inputCantidad"> Cantidad </label>
+            <input
+              type="number"
+              placeholder="Cantidad del Producto"
+              aria-label="form-control-sm"
+              id="inputCantidad" name="inputCantidad"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputPrecio"> Precio </label>
+            <input
+              type="number"
+              placeholder="Precio del Producto"
+              aria-label="form-control-sm"
+              id="inputPrecio" name="inputPrecio"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-3">
+            <button type="button" class="btm btn-primary btn-lg">
+              Guardar
+            </button>
+            <button type="button" class="btm btn-primary btn-lg">
+                Borrar
+            </button>
+          </div>
+        </form>
+        </div>
+     
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
